@@ -7,260 +7,79 @@
     <title>Practica B3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 
 <body>
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
             <div class="container">
-                <a class="navbar-brand" href="#">Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Disabled</a>
-                        </li>
-                        <li class="nav-item m-5 mb-0 mt-0">
-                            <a class="nav-link active" href="#">+5555 55555</a>
-                        </li>
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+
+                      <li class="nav-item dropdown">
+                        <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Futbol
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Baloncesto
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Motor
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+
+
+                      <li class="nav-item dropdown">
+                        <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Más
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+
                     </ul>
-                </div>
+                    <form class="d-flex ms-auto" role="search">
+                        <div class="input-group">
+                          <input class="form-control" type="search" placeholder="Busca en Marca.com" aria-label="Search">
+                          <span class="input-group-text">
+                            <i class="fa fa-search"></i>
+                          </span>
+                        </div>
+                    </form>
+                      
+                  </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner bg-black ">
-                <div class="carousel-item active">
-                    <img src="./assets/img/309-2000x800.jpg" class="d-block w-100 opacity-50" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Título uno</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia pariatur eaque
-                            possimus, magnam ipsa harum adipisci quisquam saepe aperiam, quasi, veniam eligendi quo
-                            aliquam dicta modi odit exercitationem consequuntur!</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/img/609-2000x800.jpg" class="d-block w-100 opacity-50" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Título dos</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem quis eaque quo.
-                            Architecto, exercitationem. Modi deleniti similique vel, ducimus quaerat temporibus harum
-                            corporis nihil vero at. Unde, nulla nostrum.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/img/861-2000x800.jpg" class="d-block w-100 opacity-50" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Título tres</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste expedita porro laboriosam
-                            soluta accusamus commodi hic autem officia voluptas, perferendis impedit temporibus error
-                            qui provident neque, quidem ratione ab quisquam?</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center mt-5 mb-5">
-                    <h2 class="display-2 mb-5">
-                        Lorem ipsum dolor.
-                    </h2>
-                    <p class="text-info fs-4">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quo minus tenetur modi
-                        similique
-                        at unde necessitatibus ut harum, voluptatibus temporibus voluptatem. Mollitia repellat excepturi
-                        ipsam nesciunt! Sed, ipsam corporis.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-12 mb-5">
-                    <article class="card">
-                        <img src="./assets/img/309-2000x800.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-info text-white">Más información</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-5">
-                    <article class="card">
-                        <img src="./assets/img/609-2000x800.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-info text-white">Más información</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-5">
-                    <article class="card">
-                        <img src="./assets/img/861-2000x800.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-info text-white">Más información</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 mb-5">
-                    <div class="jumbotron">
-                        <h2 class="display-4">Hello, world!</h2>
-                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
-                            attention to featured content or information.</p>
-                        <hr class="my-4">
-                        <p>It uses utility classes for typography and spacing to space content out within the larger
-                            container.
-                        </p>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center mt-5 mb-5">
-                    <h2 class="display-2 mb-5">
-                        Lorem ipsum dolor.
-                    </h2>
-                    <p class="text-info fs-4">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quo minus tenetur modi
-                        similique
-                        at unde necessitatibus ut harum, voluptatibus temporibus voluptatem. Mollitia repellat excepturi
-                        ipsam nesciunt! Sed, ipsam corporis.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mb-5">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed bg-info text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    Accordion Item #1
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse show"
-                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Iusto, consequuntur amet. Sapiente repellat quidem similique excepturi totam? Magnam
-                                    explicabo illo nostrum illum voluptatem fugit ab odit. Animi rerum reprehenderit
-                                    dolorem, tempore hic obcaecati? Esse ut non, voluptate suscipit et, vitae aut at,
-                                    adipisci cum atque delectus ab pariatur! Error minima molestias reprehenderit magnam
-                                    soluta quia! Eveniet voluptates voluptatibus maxime rem ullam beatae possimus
-                                    consequuntur at, repudiandae itaque, sed perspiciatis. Temporibus impedit earum
-                                    accusantium ex obcaecati a iusto adipisci labore ratione!
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button collapsed bg-info text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                        aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        Accordion Item #2
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Voluptatem temporibus totam facere! Iusto corporis laboriosam, voluptatum eius
-                                        odio molestias ducimus eveniet atque excepturi, totam ipsam! Accusamus
-                                        perferendis, consequatur maxime, laudantium blanditiis dolore inventore libero
-                                        quaerat sunt suscipit vitae natus, molestias alias. Totam porro voluptate optio
-                                        repellat impedit aperiam ex alias omnis, sequi ratione hic, placeat iusto,
-                                        dolorem nemo molestiae! Autem, voluptates fugit est repellendus maiores iste
-                                        amet voluptate facilis sequi architecto, perspiciatis id. Reprehenderit nobis
-                                        laborum natus corporis? Debitis, vitae.
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingThree">
-                                        <button class="accordion-button collapsed bg-info text-white" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                            aria-expanded="false" aria-controls="flush-collapseThree">
-                                            Accordion Item #3
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit. Voluptates vero, veniam enim hic quos commodi distinctio nostrum minus
-                                            laudantium aliquam corrupti ullam non esse incidunt perspiciatis accusantium
-                                            reiciendis eum iste consectetur, temporibus ab obcaecati unde minima.
-                                            Laboriosam natus aut suscipit nisi totam ea quos itaque hic dolorem? Ut
-                                            quidem nemo atque corrupti, ratione, asperiores corporis et consectetur vel,
-                                            sit qui aspernatur quas tenetur optio sunt fuga quibusdam necessitatibus!
-                                            Totam repellendus accusamus vel quod assumenda id aliquid amet veniam quidem
-                                            maiores?
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-5">
-                    <img src="./assets/img/309-2000x800.jpg" class="img-fluid" alt="..." />
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-info active" aria-current="true">An active item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
     </main>
 
     <footer class="bg-dark text-center text-white p-3">
