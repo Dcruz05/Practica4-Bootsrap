@@ -15,45 +15,48 @@
 <body>
   <header>
     <div class="container">
-      <div class="col-md-12">
-        <div class="row">
-          <span class="text-body-secondary" style="font-size: smaller;">
-            <span class="fw-bold">Es noticia:</span>
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-            <a href="#" class="text-decoration-none text-dark">Noticias</a> /
-          </span>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="d-flex flex-row" style="overflow-x: auto; white-space: nowrap;">
+            <span class="text-body-secondary" style="font-size: smaller;">
+              <span class="fw-bold">Es noticia:</span>
+              <a href="#" class="text-decoration-none text-dark">América vs Atlas</a> /
+              <a href="#" class="text-decoration-none text-dark">Canelo</a> /
+              <a href="#" class="text-decoration-none text-dark">Cruz Azul vs Chivas</a> /
+              <a href="#" class="text-decoration-none text-dark">Necaxa vs Tigres</a> /
+              <a href="#" class="text-decoration-none text-dark">Boxing</a> /
+              <a href="#" class="text-decoration-none text-dark">Gaming</a> /
+              <a href="#" class="text-decoration-none text-dark">Alineaciones América</a> /
+              <a href="#" class="text-decoration-none text-dark">Lo úiltimo en deporte</a> /
+              <a href="#" class="text-decoration-none text-dark">Chismes</a> /
+              <a href="#" class="text-decoration-none text-dark">Simulacro Nacional 2023</a> /
+              <span class="fw-bold">El Final...</span>
+            </span>
+          </div>
         </div>
       </div>
-      <div class="col-md-12 mt-1 mb-1">
-        <div class="row">
-          <div class="col-md-3 d-flex align-items-center fw-bold fs-6 text">
-            <img src="./assets/img/svg/1200px-RadioMARCA.svg.png" alt="Logo Radio MARCA" class="img-fluid m-1"
-              style="width: 2rem;" />
-            Radio MARCA
+      <div class="row mt-1 mb-1">
+        <div class="col-3 d-flex align-items-center fw-bold fs-6 text">
+          <img src="./assets/img/svg/1200px-RadioMARCA.svg.png" alt="Logo Radio MARCA"
+            class="img-fluid m-1 d-none d-lg-block" style="width: 2rem;" />
+          <span class="d-none d-lg-block">Radio MARCA</span>
+        </div>
+        <div class="col-6 text-center d-none d-lg-block">
+          <img src="./assets/img/svg/Marca.svg.png" alt="Logo MARCA" class="img-fluid" style="width: 200px;" />
+        </div>
+        <div class="col-3 d-flex align-items-center justify-content-end ">
+          <div class="btn-group d-none d-lg-block">
+            <button class="btn btn-secondary bg-light text-dark btn-sm dropdown-toggle" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./assets/img/svg/Flag_of_Mexico.png" alt="México" class="img-fluid" style="width: 20px;" />
+              MX
+            </button>
+            <ul class="dropdown-menu">
+              ...
+            </ul>
           </div>
-          <div class="col-md-6 text-center">
-            <img src="./assets/img/svg/Marca.svg.png" alt="Logo MARCA" class="img-fluid" style="width: 150px;" />
-          </div>
-          <div class="col-md-3 d-flex align-items-center justify-content-end">
-            <button type="button" class="btn btn-outline-danger btn-sm">Iniciar sesión</button>
-          </div>
+          <div class="m-1 mt-0 mb-0"></div>
+          <button type="button" class="btn btn-outline-danger btn-sm d-none d-lg-block">Iniciar sesión</button>
         </div>
       </div>
     </div>
@@ -61,6 +64,10 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-red sticky-top" style="padding: 0;">
     <div class="container">
+      <a class="navbar-brand d-lg-none" href="#">
+        <img src="./assets/img/svg/Marca-blanco.svg.png" alt="Logo MARCA" class="imagen-con-fondo"
+          style="width: 150px;" />
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -68,6 +75,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
         <ul class="navbar-nav mb-2 mb-lg-0 fs-6">
+          <button type="button" class="btn btn-outline-light btn-sm d-lg-none">Iniciar sesión</button>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active fw-bold" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
@@ -124,6 +132,18 @@
           <li class="nav-item">
             <a class="nav-link active fw-bold" href="#">Más <i class="fa fa-plus" aria-hidden="true"></i></a>
           </li>
+          <li class="nav-item dropdown d-lg-none">
+            <a class="nav-link dropdown-toggle active fw-bold" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./assets/img/svg/Flag_of_Mexico.png" alt="México" class="img-fluid" style="width: 20px;" />
+              MX
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">ES (España)</a></li>
+              <li><a class="dropdown-item" href="#">MX (México)</a></li>
+              <li><a class="dropdown-item" href="#">USA (Estados Unidos)</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -145,10 +165,10 @@
             <tbody>
               <tr>
                 <th scope="row" class="align-middle text-center">
-                  Resultados:
-                  <div class="dropdown">
-                    <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
+                  <p class="">Resultados:</p>
+                  <div class="btn-group">
+                    <button class="btn btn-secondary bg-light text-dark btn-sm dropdown-toggle" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
                       Todos
                     </button>
                     <ul class="dropdown-menu">
@@ -257,7 +277,7 @@
           <hr />
           <div class="row">
             <div class="col-md-8">
-              <article class="card">
+              <article class="card mb-3">
                 <a href="#" class="text-decoration-none text-dark">
                   <img src="./assets/img/articles/titular.webp" class="card-img-top" alt="...">
                   <div class="card-body">
@@ -271,7 +291,6 @@
                   </div>
                 </a>
               </article>
-              <hr />
               <article class="card mb-3">
                 <a href="#" class="text-decoration-none text-dark">
                   <div class="row g-0">
@@ -292,8 +311,78 @@
                   </div>
                 </a>
               </article>
-              <hr />
-              <div class="row row-cols-1 row-cols-md-2 g-4">
+            </div>
+            <div class="col-md-4">
+              <article class="card mb-3">
+                <a href="#" class="text-decoration-none text-dark">
+                  <div class="row g-0">
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-danger fw-bold">MUNDIAL DE CLUBES</h6>
+                        <h5 class="card-title fs-6 fw-bolder">
+                          Larcamón sobre el City y Pep: "Especial tener al frente al mejor DT de la historia"
+                        </h5>
+                        <div class="card-footer fw-medium p-0">
+                          HEATHER MASON
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center">
+                      <img src="./assets/img/articles/art1-aside.webp" class="img-fluid rounded-end card-img-container"
+                        alt="...">
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="card mb-3">
+                <a href="#" class="text-decoration-none text-dark">
+                  <div class="row g-0">
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-danger fw-bold">LIGA DE EXPANSIÓN MX</h6>
+                        <h5 class="card-title fs-6 fw-bolder">
+                          Teun WIIlke, el fichaje que Chivas le 'robó' al América
+                        </h5>
+                        <div class="card-footer fw-medium p-0">
+                          HATTY HATTINGTON
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center">
+                      <img src="./assets/img/articles/art2-aside.webp" class="img-fluid rounded-end card-img-container"
+                        alt="...">
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="card mb-3 d-flex align-items-center">
+                <a href="#" class="text-decoration-none text-dark">
+                  <div class="row g-0">
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-danger fw-bold">F1</h6>
+                        <h5 class="card-title fs-6 fw-bolder">
+                          "Checo Pérez no es consistente", Helmut Marko y su nuevo dardo pensando en asiento de 2025
+                          ¿Para Lando Norris?
+                        </h5>
+                        <div class="card-footer fw-medium p-0">
+                          REDACCIÓN MARCA MX
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center">
+                      <img src="./assets/img/articles/art3-aside.webp" class="img-fluid rounded-end card-img-container"
+                        alt="...">
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-8">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                   <article class="card">
                     <img src="./assets/img/articles/art3.webp" class="card-img-top" alt="...">
@@ -336,88 +425,62 @@
                     </div>
                   </article>
                 </div>
-                <div class="col">
-                  <article class="card">
-                    <img src="./assets/img/articles/art6.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-danger fw-bold">CRUZ AZUL</h6>
-                      <h5 class="card-title fs-5 fw-bolder">
-                        Franco Escamilla destroza, con chiste, a
-                        Sebastían Jurado: "Cruz Azul, pongan una mochila
-                      </h5>
-                      <div class="card-footer fw-medium p-0">
-                        GLaDOS
-                      </div>
-                    </div>
-                  </article>
-                </div>
               </div>
+              <!-- 
+              <div class="col-md-4">
+
+              </div>
+              <div class="col-md-4">
+
+              </div>
+              <div class="col-md-4">
+                <article class="card">
+                  <img src="./assets/img/articles/art6.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-danger fw-bold">CRUZ AZUL</h6>
+                    <h5 class="card-title fs-5 fw-bolder">
+                      Franco Escamilla destroza, con chiste, a
+                      Sebastían Jurado: "Cruz Azul, pongan una mochila
+                    </h5>
+                    <div class="card-footer fw-medium p-0">
+                      GLaDOS
+                    </div>
+                  </div>
+                </article>
+              </div> -->
             </div>
             <div class="col-md-4">
+              <!-- Vacío -->
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-8">
               <article class="card mb-3">
                 <a href="#" class="text-decoration-none text-dark">
                   <div class="row g-0">
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-danger fw-bold">MUNDIAL DE CLUBES</h6>
-                        <h5 class="card-title fs-6 fw-bolder">
-                          Larcamón sobre el City y Pep: "Especial tener al frente al mejor DT de la historia"
-                        </h5>
-                        <div class="card-footer fw-medium p-0">
-                          HEATHER MASON
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-center">
-                      <img src="./assets/img/articles/art1-aside.webp" class="img-fluid rounded-end card-img-container"
-                        alt="...">
-                    </div>
-                  </div>
-                </a>
-              </article>
-              <article class="card mb-3">
-                <a href="#" class="text-decoration-none text-dark">
-                  <div class="row g-0">
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-danger fw-bold">LIGA DE EXPANSIÓN MX</h6>
-                        <h5 class="card-title fs-6 fw-bolder">
-                          Teun WIIlke, el fichaje que Chivas le 'robó' al América
-                        </h5>
-                        <div class="card-footer fw-medium p-0">
-                          HATTY HATTINGTON
-                        </div>
-                      </div>
-                    </div>
                     <div class="col-md-4">
-                      <img src="./assets/img/articles/art2-aside.webp" class="img-fluid rounded-end card-img-container"
-                        alt="...">
+                      <img src="./assets/img/articles/art6.webp" class="img-fluid rounded-start" alt="...">
+                      <!-- REEMPLAZAR ARTÍCULO POR OTRO GRANDE -->
                     </div>
-                  </div>
-                </a>
-              </article>
-              <article class="card mb-3 d-flex align-items-center">
-                <a href="#" class="text-decoration-none text-dark">
-                  <div class="row g-0">
                     <div class="col-md-8">
                       <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-danger fw-bold">F1</h6>
-                        <h5 class="card-title fs-6 fw-bolder">
-                          "Checo Pérez no es consistente", Helmut Marko y su nuevo dardo pensando en asiento de 2025
-                          ¿Para Lando Norris?
+                        <h6 class="card-subtitle mb-2 text-danger fw-bold">CRUZ AZUL</h6>
+                        <h5 class="card-title fs-5 fw-bolder">
+                          Franco Escamilla destroza, con chiste, a
+                          Sebastían Jurado: "Cruz Azul, pongan una mochila
                         </h5>
                         <div class="card-footer fw-medium p-0">
-                          REDACCIÓN MARCA MX
+                          <small class="">GLaDOS</small>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4 d-flex align-items-center">
-                      <img src="./assets/img/articles/art3-aside.webp" class="img-fluid rounded-end card-img-container"
-                        alt="...">
-                    </div>
                   </div>
                 </a>
               </article>
+            </div>
+            <div class="col-md-4">
+              <!-- AGREGAR UN ARTÍCULO -->
             </div>
           </div>
           <hr />
