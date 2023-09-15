@@ -1,5 +1,9 @@
 /* Estilos */
 
+* {
+    font-family: robotoRegular, Arial, sans-serif;
+}
+
 .bg-red {
     background-color: rgb(200, 0, 0);
 }
@@ -53,7 +57,7 @@
     text-decoration: none;
 }
 
-.link-no-underline:hover{
+.link-no-underline:hover {
     color: rgb(255, 0, 0);
     border-bottom: none;
 }
@@ -68,9 +72,9 @@
 .link-no-underline-white:hover {
     border-bottom: 1px solid rgb(255, 255, 255);
 }
+
 /* Transiciones, animaciones */
 
 .navbar .navbar-nav .nav-link {
     transition: all 0.3s;
 }
-

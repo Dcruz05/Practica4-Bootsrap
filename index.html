@@ -1,701 +1,1197 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Practica B4</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/svg/favicon.png"
+      type="image/png"
+    />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Practica B4</title>
-  <link rel="shortcut icon" href="./assets/img/svg/favicon.png" type="image/png">
-  <link href="./assets/css/style.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="d-flex flex-row" style="overflow-x: auto; white-space: nowrap;">
-            <span class="text-body-secondary" style="font-size: smaller;">
-              <span class="fw-bold">Es noticia:</span>
-              <a href="#" class="link">América vs Atlas</a> /
-              <a href="#" class="link">Canelo</a> /
-              <a href="#" class="link">Cruz Azul vs Chivas</a> /
-              <a href="#" class="link">Necaxa vs Tigres</a> /
-              <a href="#" class="link">Boxing</a> /
-              <a href="#" class="link">Gaming</a> /
-              <a href="#" class="link">Alineaciones América</a> /
-              <a href="#" class="link">Lo úiltimo en deporte</a> /
-              <a href="#" class="link">Chismes</a> /
-              <a href="#" class="link">Simulacro Nacional 2023</a> /
-              <span class="fw-bold">El Final...</span>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-1 mb-1">
-        <div class="col-3 d-flex align-items-center fw-semibold" style="font-size: smaller;">
-          <img src="./assets/img/svg/1200px-RadioMARCA.svg.png" alt="Logo Radio MARCA"
-            class="img-fluid m-1 d-none d-lg-block" style="width: 2rem;" />
-          <a href="https://www.marca.com/radio.html?intcmp=BOTONPORTADA&s_kw=radiomarca" target="_blank" class="link d-none d-lg-block">
-            Radio MARCA
-          </a>
-          <hr style="border: 1px solid rgb(66, 66, 66); height: 50%;" class="m-2 d-none d-lg-block">
-          <img src="./assets/img/svg/cuidateplus-logo.png" alt="Logo CuídatePlus"
-            class="img-fluid m-1 d-none d-lg-block" style="width: 2rem;" />
-          <a href="https://cuidateplus.marca.com/" target="_blank" class="link d-none d-lg-block">
-            CuídatePlus
-          </a>
-          <hr style="border: 1px solid rgb(66, 66, 66); height: 50%;" class="m-2 d-none d-lg-block">
-          <img src="./assets/img/svg/lo+trending-logo.png" alt="Logo Lo más Trending"
-            class="img-fluid m-1 d-none d-lg-block" style="width: 2rem;" />
-          <a href="https://www.marca.com/mx/trending.html" target="_blank" class="link d-none d-lg-block">
-            Lo + Trending
-          </a>
-        </div>
-        <div class="col-6 text-center d-none d-lg-block">
-          <img src="./assets/img/svg/Marca.svg.png" alt="Logo MARCA" class="img-fluid" style="width: 200px;" />
-        </div>
-        <div class="col-3 d-flex align-items-center justify-content-end ">
-          <div class="btn-group d-none d-lg-block">
-            <button class="btn btn-secondary bg-light text-dark btn-sm dropdown-toggle" type="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="./assets/img/svg/Flag_of_Mexico.png" alt="México" class="img-fluid" style="width: 20px;" />
-              MX
-            </button>
-            <ul class="dropdown-menu">
-              ...
-            </ul>
-          </div>
-          <div class="m-1 mt-0 mb-0"></div>
-          <button type="button" class="btn btn-outline-danger btn-sm d-none d-lg-block">Iniciar sesión</button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-red sticky-top" style="padding: 0;">
-    <div class="container">
-      <a class="navbar-brand d-lg-none" href="#">
-        <img src="./assets/img/svg/Marca-blanco.svg.png" alt="Logo MARCA" class="imagen-con-fondo"
-          style="width: 150px;" />
-      </a>
-      <div class="align-content-end">
-        <a href="#" class="text-decoration-none d-lg-none" title="Radio MARCA">
-          <img src="./assets/img/svg/1200px-RadioMARCA.svg.png" alt="Logo Radio MARCA" class="img-fluid m-1"
-            style="width: 2rem;" />
-        </a>
-        <div class="btn-group d-lg-none">
-          <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <img src="./assets/img/svg/Flag_of_Mexico.png" alt="México" class="img-fluid" style="width: 20px;" />
-            MX
-          </button>
-          <ul class="dropdown-menu p-1 ">
-            <strong>Ediciones</strong>
-            <hr />
-            <a href="#" class="dropdown-item active">
-              <img src="./assets/img/svg/Flag_of_Mexico.png" alt="México" class="img-fluid" style="width: 20px;" />
-              MX (México)
-            </a>
-          </ul>
-        </div>
-        <button type="button" class="btn btn-outline-light btn-sm d-lg-none">
-          Iniciar sesión
-        </button>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-        <ul class="navbar-nav mb-2 mb-lg-0 fs-6">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active fw-bold" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Fútbol
-            </a>
-            <ul class="dropdown-menu bg-dark p-3" aria-labelledby="navbarDropdownMenuLink">
-                <div class="row">
-                  <div class="col-md-6">
-                    <li class="fw-bolder text-white mb-2 fs-5">México</li>
-                    <li><a class="link-no-underline fw-bold" href="#">Liga MX</a></li>
-                    <li><a class="link-no-underline" href="#"><small>Calendario-Apertura  /</small></a></li>
-                    <li><a class="link-no-underline" href="#">Something else here</a></li>
-                  </div>
-                  <div class="col-md-6">
-                    <li class="fw-bolder text-white mb-2 fs-5">México</li>
-                    <li><a class="link-no-underline fw-bold" href="#">Liga MX</a></li>
-                    <li><a class="link-no-underline" href="#"><small>Calendario-Apertura  /</small></a></li>
-                    <li><a class="link-no-underline" href="#">Something else here</a></li>
-                  </div>
-                </div>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active fw-bold" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Motor
-            </a>
-            <ul class="dropdown-menu bg-dark p-3" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="link-no-underline" href="#">Action</a></li>
-              <li><a class="link-no-underline" href="#">Another action</a></li>
-              <li><a class="link-no-underline" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active fw-bold" href="#">Boxeo</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active fw-bold" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              NFL
-            </a>
-            <ul class="dropdown-menu bg-dark p-3" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="link-no-underline" href="#">Action</a></li>
-              <li><a class="link-no-underline" href="#">Another action</a></li>
-              <li><a class="link-no-underline" href="#">Something else here</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active fw-bold" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Otros deportes
-            </a>
-            <ul class="dropdown-menu bg-dark p-3" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="link-no-underline" href="#">Action</a></li>
-              <li><a class="link-no-underline" href="#">Another action</a></li>
-              <li><a class="link-no-underline" href="#">Something else here</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item bg-strong-red d-flex align-items-center">
-            <a class="link-no-underline-white m-2 mb-0 mt-0" href="#">Actualidad</a>
-          </li>
-          <li class="nav-item bg-strong-red d-flex align-items-center">
-            <a class="link-no-underline-white m-2 mb-0 mt-0" href="#">Últimas noticias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold active" href="#">Más <i class="fa fa-plus" aria-hidden="true"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 m-2 d-flex justify-content-center">
-          <a href="#">
-            <img src="./assets/img/svg/america.png" class="img-fluid m-2 mt-0 mb-0" alt="..." style="width: 2rem;" />
-          </a>
-          <a href="#">
-            <img src="./assets/img/svg/atlas.png" class="img-fluid m-2 mt-0 mb-0" alt="..." style="width: 2rem;" />
-          </a>
-          <a href="#">
-            <img src="./assets/img/svg/cruz-azul.png" class="img-fluid m-2 mt-0 mb-0" alt="..." style="width: 2rem;" />
-          </a>
-          <a href="#">
-            <img src="./assets/img/svg/chivas.png" class="img-fluid m-2 mt-0 mb-0" alt="..." style="width: 2rem;" />
-          </a>
-          <a href="#">
-            <img src="./assets/img/svg/necaxa.png" class="img-fluid m-2 mt-0 mb-0" alt="..." style="width: 2rem;" />
-          </a>
-          <a href="#">
-            <img src="./assets/img/svg/tigres.png" class="img-fluid m-2 mt-0 mb-0" alt="..." style="width: 2rem;" />
-          </a>
-        </div>
-        <div class="row">
-          <div class="col-12 d-flex justify-content-center m-3">
-            <a href="https://casino.bet365.mx/home" target="_blank">
-              <img src="./assets/img/gifs/bet365-wide.gif" alt="Publicidad Bet365" class="img-fluid"
-                style="width: 50rem;" />
-            </a>
-          </div>
-        </div>
+  <body>
+    <header>
+      <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <table class="table table-bordered" style="overflow-x: auto; white-space: nowrap;">
-              <tbody>
-                <tr>
-                  <th scope="row" class="align-middle text-center">
-                    <p class="">Resultados:</p>
-                    <div class="btn-group">
-                      <button class="btn btn-secondary bg-light text-dark btn-sm dropdown-toggle" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Todos
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div>
-                  </th>
-                  <td>
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <p class="fw-bold">LIGA EXPANSIÓN MX</p>
-                          <hr />
-                          <div class="row">
-                            <div class="col-md-4">
-                              <div class="card">
-                                <div class="card-body text-center">
-                                  <p class="text-muted">Finalizado</p>
-                                  <div class="row">
-                                    <div class="col-md-3">
-                                      <img src="./assets/img/svg/america.png" class="img-fluid" alt="..." />
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p class="">América</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <p class="fw-bold">2</p>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-md-3">
-                                      <img src="./assets/img/svg/atlas.png" class="img-fluid" alt="..." />
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p class="">Atlas</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <p class="">0</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="card">
-                                <div class="card-body text-center">
-                                  <p class="text-muted">Finalizado</p>
-                                  <div class="row">
-                                    <div class="col-md-3">
-                                      <img src="./assets/img/svg/cruz-azul.png" class="img-fluid" alt="..." />
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p class="">Cruz Azul</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <p class="">2</p>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-md-3">
-                                      <img src="./assets/img/svg/chivas.png" class="img-fluid" alt="..." />
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p class="">Chivas</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <p class="fw-bold">3</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="card">
-                                <div class="card-body text-center">
-                                  <p class="fw-bold">21:00</p>
-                                  <div class="row">
-                                    <div class="col-md-3">
-                                      <img src="./assets/img/svg/necaxa.png" class="img-fluid" alt="..." />
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p class="">Necaxa</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <p class="">-</p>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-md-3">
-                                      <img src="./assets/img/svg/tigres.png" class="img-fluid" alt="..." />
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p class="">Tigres</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <p class="">-</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <p class="fw-bold">COPA DE LA LIGA PROFESIONAL</p>
-                          <hr />
-                          <div class="row">
-                            <div class="col-md-4">
-                              <div class="card">
-                                <div class="card-body text-center">
-                                  <p class="text-muted">Finalizado</p>
-                                  <div class="row">
-                                    <div class="col-md-3">
-                                      <img src="./assets/img/svg/america.png" class="img-fluid" alt="..." />
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p class="">América</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <p class="fw-bold">5</p>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-md-3">
-                                      <img src="./assets/img/svg/atlas.png" class="img-fluid" alt="..." />
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p class="">Atlas</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <p class="">2</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="card">
-                                <div class="card-body text-center">
-                                  <p class="fw-bold">13:00</p>
-                                  <div class="row">
-                                    <div class="col-md-3">
-                                      <img src="./assets/img/svg/cruz-azul.png" class="img-fluid" alt="..." />
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p class="">Cruz Azul</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <p class="">-</p>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-md-3">
-                                      <img src="./assets/img/svg/chivas.png" class="img-fluid" alt="..." />
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p class="">Chivas</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <p class="fw-bold">-</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="card">
-                                <div class="card-body text-center">
-                                  <p class="fw-bold">15:00</p>
-                                  <div class="row">
-                                    <div class="col-md-3">
-                                      <img src="./assets/img/svg/necaxa.png" class="img-fluid" alt="..." />
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p class="">Necaxa</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <p class="">-</p>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-md-3">
-                                      <img src="./assets/img/svg/tigres.png" class="img-fluid" alt="..." />
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p class="">Tigres</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <p class="">-</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <hr />
-                      <div class="btn-group d-flex justify-content-center" role="group"
-                        aria-label="Controles de los partidos">
-                        <button class="btn btn-outline-danger" title="Partidos anteriores" type="button"
-                          data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                          <i class="fa fa-arrow-left" aria-hidden="true"></i> Anterior
-                        </button>
-                        <button class="btn btn-danger" type="button">
-                          Ver todo
-                        </button>
-                        <button class="btn btn-outline-danger" title="Siguientes partidos" type="button"
-                          data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                          Siguiente <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <hr />
-            <div class="row">
-              <h6 class="mb-3 text-danger fw-bold">PORTADA</h6>
-              <div class="col-md-8">
-                <article class="card mb-3">
-                  <a href="#" class="text-decoration-none text-dark">
-                    <img src="./assets/img/articles/titular.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-danger fw-bold">MEXICANOS POR EL MUNDO</h6>
-                      <h5 class="card-title fs-1 fw-bolder">
-                        Chucky Lozano, el "refuerzo absoluto" del PSV Eindhoven.
-                      </h5>
-                    </div>
-                    <div class="card-footer fw-medium">
-                      <small class="">JAMES SUNDERLAND</small>
-                    </div>
-                  </a>
-                </article>
-                <article class="card">
-                  <a href="#" class="text-decoration-none text-dark">
-                    <div class="row g-0">
-                      <div class="col-md-4 d-flex align-items-center">
-                        <img src="./assets/img/articles/art2.webp" class="img-fluid card-img-container rounded-start"
-                          alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h6 class="card-subtitle mb-2 text-danger fw-bold">LOS ÁNGELES DODGERS</h6>
-                          <h5 class="card-title fs-4 fw-bolder">
-                            De qué se le acusa a Julio Urías: Revelan los motivos de detención del mexicano de Dodgers
-                          </h5>
-                        </div>
-                        <div class="card-footer fw-medium">
-                          <small class="">WALTER WHITE</small>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-              </div>
-              <div class="col-md-4">
-                <article class="card mb-3">
-                  <a href="#" class="text-decoration-none text-dark">
-                    <img src="./assets/img/articles/art1-aside.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-danger fw-bold">MUNDIAL DE CLUBES</h6>
-                      <h5 class="card-title fs-6 fw-bolder">
-                        Larcamón sobre el City y Pep: "Especial tener al frente al mejor DT de la historia"
-                      </h5>
-                    </div>
-                    <div class="card-footer fw-medium">
-                      <small class="">HEATHER MASON</small>
-                    </div>
-                  </a>
-                </article>
-                <article class="card mb-3">
-                  <a href="#" class="text-decoration-none text-dark">
-                    <div class="row g-0">
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h6 class="card-subtitle mb-2 text-danger fw-bold">LIGA DE EXPANSIÓN MX</h6>
-                          <h5 class="card-title fs-6 fw-bolder">
-                            Teun WIIlke, el fichaje que Chivas le 'robó' al América
-                          </h5>
-                        </div>
-                      </div>
-                      <div class="col-md-4 d-flex align-items-center">
-                        <img src="./assets/img/articles/art2-aside.webp"
-                          class="img-fluid rounded-end card-img-container" alt="...">
-                      </div>
-                      <div class="card-footer fw-medium">
-                        HATTY HATTINGTON
-                      </div>
-                    </div>
-                  </a>
-                </article>
-                <article class="card mb-3 d-flex align-items-start">
-                  <a href="#" class="text-decoration-none text-dark">
-                    <div class="row g-0">
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h6 class="card-subtitle mb-2 text-danger fw-bold">F1</h6>
-                          <h5 class="card-title fs-6 fw-bolder">
-                            "Checo Pérez no es consistente", Helmut Marko y su nuevo dardo pensando en asiento de 2025
-                            ¿Para Lando Norris?
-                          </h5>
-                        </div>
-                      </div>
-                      <div class="col-md-4 d-flex align-items-center">
-                        <img src="./assets/img/articles/art3-aside.webp"
-                          class="img-fluid rounded-end card-img-container" alt="...">
-                      </div>
-                      <div class="card-footer fw-medium">
-                        REDACCIÓN MARCA MX
-                      </div>
-                    </div>
-                  </a>
-                </article>
-              </div>
+            <div
+              class="d-flex flex-row"
+              style="overflow-x: auto; white-space: nowrap"
+            >
+              <span class="text-body-secondary" style="font-size: smaller">
+                <span class="fw-bold">Es noticia:</span>
+                <a href="#" class="link">América vs Atlas</a> /
+                <a href="#" class="link">Canelo</a> /
+                <a href="#" class="link">Cruz Azul vs Chivas</a> /
+                <a href="#" class="link">Necaxa vs Tigres</a> /
+                <a href="#" class="link">Boxing</a> /
+                <a href="#" class="link">Gaming</a> /
+                <a href="#" class="link">Alineaciones América</a> /
+                <a href="#" class="link">Lo úiltimo en deporte</a> /
+                <a href="#" class="link">Chismes</a> /
+                <a href="#" class="link">Simulacro Nacional 2023</a> /
+                <span class="fw-bold">El Final...</span>
+              </span>
             </div>
-            <hr />
-            <div class="row">
-              <h6 class="mb-3 text-danger fw-bold">FÚTBOL</h6>
-              <div class="col-md-8">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                  <div class="col-md-4 col-sm-6">
-                    <article class="card">
-                      <img src="./assets/img/articles/art3.webp" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-danger fw-bold">CLUB AMÉRICA</h6>
-                        <h5 class="card-title fs-5 fw-bolder">
-                          Israel Reyes, en riesgo de perderse el Clásico Nacional: América Informó de su lesión
-                        </h5>
-                      </div>
-                      <div class="card-footer fw-medium">
-                        <small class="">GORDON FREEMAN</small>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <article class="card">
-                      <img src="./assets/img/articles/art4.webp" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-danger fw-bold">SELECCIÓN NACIONAL DE MÉXICO</h6>
-                        <h5 class="card-title fs-5 fw-bolder">
-                          Chucky Lozano lo acepta: No había conexión entre jugadores y Tata Martino durante Qatar 2022
-                        </h5>
-                      </div>
-                      <div class="card-footer fw-medium">
-                        <small class="">CRAZY DAVE</small>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col-md-4 col-sm-12">
-                    <article class="card">
-                      <img src="./assets/img/articles/art5.webp" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-danger fw-bold">FÚTBOL FEMENIL</h6>
-                        <h5 class="card-title fs-5 fw-bolder">
-                          Jenni Hermoso 'alarma' en Pachuca con el rumor de su ida a Tigres
-                        </h5>
-                      </div>
-                      <div class="card-footer fw-medium">
-                        ISAAC CLARKE
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 d-flex align-items-center mt-3 mb-3">
-                <a href="https://www.caliente.mx/casino" target="_blank">
-                  <img src="./assets/img/gifs/caliente-mx-wide.gif" alt="Publicidad Caliente MX"
-                    class="img-fluid" style="width: 50rem;" />
-                </a>
-              </div>
+          </div>
+        </div>
+        <div class="row mt-1 mb-1">
+          <div
+            class="col-3 d-flex align-items-center fw-semibold"
+            style="font-size: smaller"
+          >
+            <img
+              src="./assets/img/svg/1200px-RadioMARCA.svg.png"
+              alt="Logo Radio MARCA"
+              class="img-fluid m-1 d-none d-lg-block"
+              style="width: 2rem"
+            />
+            <a
+              href="https://www.marca.com/radio.html?intcmp=BOTONPORTADA&s_kw=radiomarca"
+              target="_blank"
+              class="link d-none d-lg-block"
+            >
+              Radio MARCA
+            </a>
+            <hr
+              style="border: 1px solid rgb(66, 66, 66); height: 50%"
+              class="m-2 d-none d-lg-block"
+            />
+            <img
+              src="./assets/img/svg/cuidateplus-logo.png"
+              alt="Logo CuídatePlus"
+              class="img-fluid m-1 d-none d-lg-block"
+              style="width: 2rem"
+            />
+            <a
+              href="https://cuidateplus.marca.com/"
+              target="_blank"
+              class="link d-none d-lg-block"
+            >
+              CuídatePlus
+            </a>
+            <hr
+              style="border: 1px solid rgb(66, 66, 66); height: 50%"
+              class="m-2 d-none d-lg-block"
+            />
+            <img
+              src="./assets/img/svg/lo+trending-logo.png"
+              alt="Logo Lo más Trending"
+              class="img-fluid m-1 d-none d-lg-block"
+              style="width: 2rem"
+            />
+            <a
+              href="https://www.marca.com/mx/trending.html"
+              target="_blank"
+              class="link d-none d-lg-block"
+            >
+              Lo + Trending
+            </a>
+          </div>
+          <div class="col-6 text-center d-none d-lg-block">
+            <img
+              src="./assets/img/svg/Marca.svg.png"
+              alt="Logo MARCA"
+              class="img-fluid"
+              style="width: 200px"
+            />
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-end">
+            <div class="btn-group d-none d-lg-block">
+              <button
+                class="btn btn-secondary bg-light text-dark btn-sm dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/img/svg/Flag_of_Mexico.png"
+                  alt="México"
+                  class="img-fluid"
+                  style="width: 20px"
+                />
+                MX
+              </button>
+              <ul class="dropdown-menu">
+                ...
+              </ul>
             </div>
-            <hr />
-            <div class="row">
-              <h6 class="mb-3 text-danger fw-bold">LO MÁS TRENDING</h6>
-              <div class="col-md-8">
-                <article class="card mb-3">
-                  <a href="#" class="text-decoration-none text-dark">
-                    <div class="row g-0">
-                      <div class="col-md-4 d-flex align-items-center">
-                        <img src="./assets/img/articles/art6.webp" class="img-fluid card-img-container rounded-start"
-                          alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h6 class="card-subtitle mb-2 text-danger fw-bold">CRUZ AZUL</h6>
-                          <h5 class="card-title fs-5 fw-bolder">
-                            Franco Escamilla destroza, con chiste, a
-                            Sebastían Jurado: "Cruz Azul, pongan una mochila"
-                          </h5>
-                        </div>
-                        <div class="card-footer fw-medium">
-                          <small class="">GLaDOS</small>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-              </div>
-              <div class="col-md-4">
-                <article class="card mb-3 d-flex align-items-start">
-                  <a href="#" class="text-decoration-none text-dark">
-                    <div class="row g-0">
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h6 class="card-subtitle mb-2 text-danger fw-bold">F1</h6>
-                          <h5 class="card-title fs-6 fw-bolder">
-                            Sergio Pérez y su desafío en Red Bull:"Tuve que cambiar mi estilo de manejo"
-                          </h5>
-                        </div>
-                      </div>
-                      <div class="col-md-4 d-flex align-items-center">
-                        <img src="./assets/img/articles/art4-aside.webp"
-                          class="img-fluid rounded-end card-img-container" alt="...">
-                      </div>
-                      <div class="card-footer fw-medium">
-                        ARTHUR MORGAN
-                      </div>
-                    </div>
-                  </a>
-                </article>
-              </div>
-            </div>
-            <hr />
+            <div class="m-1 mt-0 mb-0"></div>
+            <button
+              type="button"
+              class="btn btn-outline-danger btn-sm d-none d-lg-block"
+            >
+              Iniciar sesión
+            </button>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </header>
 
-  <footer class="text-center p-3 mt-5">
-    <p class="fw-bold">
-      &copy; Septiembre 2023 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.
-    </p>
-    <p class="">
-      <a href="#" class="text-decoration-none text-dark">Política de privacidad</a> /
-      <a href="#" class="text-decoration-none text-dark">Política de cookies</a> /
-      <a href="#" class="text-decoration-none text-dark">Política de publicidad</a> /
-      <a href="#" class="text-decoration-none text-dark">Contacto</a> /
-      <a href="#" class="text-decoration-none text-dark">Aviso legal</a> /
-      <a href="#" class="text-decoration-none text-dark">Publicidad</a>
-    </p>
-    <p class="fw-bold">
-      Síguenos en:
-    </p>
-    <span class="">
-      <a href="https://www.facebook.com/MARCA/?locale=es_LA" target="_blank" class="text-decoration-none text-dark m-3">
-        <img src="./assets/img/svg/Facebook_f_logo_(2019).svg.png" class="" alt="Facebook logo" style="width: 3rem;">
-      </a>
-      <a href="https://twitter.com/marca?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="text-decoration-none text-dark m-3">
-        <img src="./assets/img/svg/rQYXqS5v-F1ySdm9WYAIbjHo-1024x1024.jpeg" class="" alt="Twitter logo"
-          style="width: 3rem; border-radius: 50%;">
-      </a>
-      <a href="https://www.marca.com/rss.html" target="_blank" class="text-decoration-none text-dark m-3">
-        <img src="./assets/img/svg/rss-icon-logo-025B789EB6-seeklogo.com.png" class="" alt="RSS logo"
-          style="width: 3rem;">
-      </a>
-    </span>
-  </footer>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-red sticky-top"
+      style="padding: 0"
+    >
+      <div class="container">
+        <a class="navbar-brand d-lg-none" href="#">
+          <img
+            src="./assets/img/svg/Marca-blanco.svg.png"
+            alt="Logo MARCA"
+            class="imagen-con-fondo"
+            style="width: 150px"
+          />
+        </a>
+        <div class="align-content-end">
+          <a
+            href="#"
+            class="text-decoration-none d-lg-none"
+            title="Radio MARCA"
+          >
+            <img
+              src="./assets/img/svg/1200px-RadioMARCA.svg.png"
+              alt="Logo Radio MARCA"
+              class="img-fluid m-1"
+              style="width: 2rem"
+            />
+          </a>
+          <div class="btn-group d-lg-none">
+            <button
+              class="btn btn-outline-light btn-sm dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./assets/img/svg/Flag_of_Mexico.png"
+                alt="México"
+                class="img-fluid"
+                style="width: 20px"
+              />
+              MX
+            </button>
+            <ul class="dropdown-menu p-1">
+              <strong>Ediciones</strong>
+              <hr />
+              <a href="#" class="dropdown-item active">
+                <img
+                  src="./assets/img/svg/Flag_of_Mexico.png"
+                  alt="México"
+                  class="img-fluid"
+                  style="width: 20px"
+                />
+                MX (México)
+              </a>
+            </ul>
+          </div>
+          <button type="button" class="btn btn-outline-light btn-sm d-lg-none">
+            Iniciar sesión
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 fs-6">
+            <li class="nav-item dropdown position-static">
+              <a
+                class="nav-link dropdown-toggle active fw-bold"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Fútbol
+              </a>
+              <ul
+                class="dropdown-menu bg-dark p-3"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <div class="row">
+                  <div class="col">
+                    <li class="fw-bolder text-white mb-2 fs-5">México</li>
+                    <li>
+                      <a class="link-no-underline fw-bold" href="#">Liga MX</a>
+                    </li>
+                    <li class="mb-2">
+                      <a class="link-no-underline" href="#"
+                        ><small>Calendario-Apertura</small></a
+                      >
+                      <span class="fw-bolder text-white mb-2"> / </span>
+                    </li>
+                    <li class="mb-2">
+                      <a class="link-no-underline" href="#"
+                        ><small>Calendario-Apertura</small></a
+                      >
+                      <span class="fw-bolder text-white mb-2"> / </span>
+                    </li>
+                    <li class="mb-2">
+                      <a class="link-no-underline" href="#"
+                        ><small>Calendario-Apertura</small></a
+                      >
+                      <span class="fw-bolder text-white mb-2"> / </span>
+                    </li>
+                    <li>
+                      <a class="link-no-underline fw-bold" href="#"
+                        >Liga de Expansión MX</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a class="link-no-underline" href="#"
+                        ><small>Calendario-Apertura</small></a
+                      >
+                      <span class="fw-bolder text-white mb-2"> / </span>
+                    </li>
+                    <li class="mb-2">
+                      <a class="link-no-underline" href="#"
+                        ><small>Calendario-Apertura</small></a
+                      >
+                      <span class="fw-bolder text-white mb-2"> / </span>
+                    </li>
+                    <li class="mb-2">
+                      <a class="link-no-underline" href="#"
+                        ><small>Calendario-Apertura</small></a
+                      >
+                      <span class="fw-bolder text-white mb-2"> / </span>
+                    </li>
+                    <li>
+                      <a class="link-no-underline fw-bold mb-2" href="#"
+                        >Concachampions</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link-no-underline fw-bold mb-2" href="#"
+                        >Mexicanos por el mundo</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link-no-underline fw-bold mb-2" href="#"
+                        >Fútbol Femeníl</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link-no-underline fw-bold mb-2" href="#"
+                        >Selección Mexicana</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link-no-underline fw-bold mb-2" href="#"
+                        >Fútbol de Estufa</a
+                      >
+                    </li>
+                  </div>
+                  <div class="col">
+                    <li class="fw-bolder text-white mb-2 fs-5">México</li>
+                    <li>
+                      <a class="link-no-underline fw-bold" href="#">Liga MX</a>
+                    </li>
+                    <li class="mb-2">
+                      <a class="link-no-underline" href="#"
+                        ><small>Calendario-Apertura</small></a
+                      >
+                      <span class="fw-bolder text-white mb-2"> / </span>
+                    </li>
+                    <li class="mb-2">
+                      <a class="link-no-underline" href="#"
+                        ><small>Calendario-Apertura</small></a
+                      >
+                      <span class="fw-bolder text-white mb-2"> / </span>
+                    </li>
+                    <li class="mb-2">
+                      <a class="link-no-underline" href="#"
+                        ><small>Calendario-Apertura</small></a
+                      >
+                      <span class="fw-bolder text-white mb-2"> / </span>
+                    </li>
+                    <li>
+                      <a class="link-no-underline fw-bold" href="#"
+                        >Liga de Expansión MX</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a class="link-no-underline" href="#"
+                        ><small>Calendario-Apertura</small></a
+                      >
+                      <span class="fw-bolder text-white mb-2"> / </span>
+                    </li>
+                    <li class="mb-2">
+                      <a class="link-no-underline" href="#"
+                        ><small>Calendario-Apertura</small></a
+                      >
+                      <span class="fw-bolder text-white mb-2"> / </span>
+                    </li>
+                    <li class="mb-2">
+                      <a class="link-no-underline" href="#"
+                        ><small>Calendario-Apertura</small></a
+                      >
+                      <span class="fw-bolder text-white mb-2"> / </span>
+                    </li>
+                    <li>
+                      <a class="link-no-underline fw-bold mb-2" href="#"
+                        >Concachampions</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link-no-underline fw-bold mb-2" href="#"
+                        >Mexicanos por el mundo</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link-no-underline fw-bold mb-2" href="#"
+                        >Fútbol Femeníl</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link-no-underline fw-bold mb-2" href="#"
+                        >Selección Mexicana</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link-no-underline fw-bold mb-2" href="#"
+                        >Fútbol de Estufa</a
+                      >
+                    </li>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active fw-bold"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Motor
+              </a>
+              <ul
+                class="dropdown-menu bg-dark p-3"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="link-no-underline" href="#">Action</a></li>
+                <li>
+                  <a class="link-no-underline" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="link-no-underline" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" href="#">Boxeo</a>
+            </li>
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-</body>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active fw-bold"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                NFL
+              </a>
+              <ul
+                class="dropdown-menu bg-dark p-3"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="link-no-underline" href="#">Action</a></li>
+                <li>
+                  <a class="link-no-underline" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="link-no-underline" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
 
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active fw-bold"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Otros deportes
+              </a>
+              <ul
+                class="dropdown-menu bg-dark p-3"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="link-no-underline" href="#">Action</a></li>
+                <li>
+                  <a class="link-no-underline" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="link-no-underline" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item bg-strong-red d-flex align-items-center">
+              <a class="link-no-underline-white m-2 mb-0 mt-0" href="#"
+                >Actualidad</a
+              >
+            </li>
+            <li class="nav-item bg-strong-red d-flex align-items-center">
+              <a class="link-no-underline-white m-2 mb-0 mt-0" href="#"
+                >Últimas noticias</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold active" href="#"
+                >Más <i class="fa fa-plus" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 m-2 d-flex justify-content-center">
+            <a href="#">
+              <img
+                src="./assets/img/svg/america.png"
+                class="img-fluid m-2 mt-0 mb-0"
+                alt="..."
+                style="width: 2rem"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/img/svg/atlas.png"
+                class="img-fluid m-2 mt-0 mb-0"
+                alt="..."
+                style="width: 2rem"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/img/svg/cruz-azul.png"
+                class="img-fluid m-2 mt-0 mb-0"
+                alt="..."
+                style="width: 2rem"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/img/svg/chivas.png"
+                class="img-fluid m-2 mt-0 mb-0"
+                alt="..."
+                style="width: 2rem"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/img/svg/necaxa.png"
+                class="img-fluid m-2 mt-0 mb-0"
+                alt="..."
+                style="width: 2rem"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/img/svg/tigres.png"
+                class="img-fluid m-2 mt-0 mb-0"
+                alt="..."
+                style="width: 2rem"
+              />
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center m-3">
+              <a href="https://casino.bet365.mx/home" target="_blank">
+                <img
+                  src="./assets/img/gifs/bet365-wide.gif"
+                  alt="Publicidad Bet365"
+                  class="img-fluid"
+                  style="width: 50rem"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <table
+                class="table table-bordered"
+                style="overflow-x: auto; white-space: nowrap"
+              >
+                <tbody>
+                  <tr>
+                    <th scope="row" class="align-middle text-center">
+                      <p class="">Resultados:</p>
+                      <div class="btn-group">
+                        <button
+                          class="btn btn-secondary bg-light text-dark btn-sm dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Todos
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </th>
+                    <td>
+                      <div
+                        id="carouselExampleIndicators"
+                        class="carousel slide"
+                      >
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <p class="fw-bold">LIGA EXPANSIÓN MX</p>
+                            <hr />
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="card">
+                                  <div class="card-body text-center">
+                                    <p class="text-muted">Finalizado</p>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img
+                                          src="./assets/img/svg/america.png"
+                                          class="img-fluid"
+                                          alt="..."
+                                        />
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p class="">América</p>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <p class="fw-bold">2</p>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img
+                                          src="./assets/img/svg/atlas.png"
+                                          class="img-fluid"
+                                          alt="..."
+                                        />
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p class="">Atlas</p>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <p class="">0</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card">
+                                  <div class="card-body text-center">
+                                    <p class="text-muted">Finalizado</p>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img
+                                          src="./assets/img/svg/cruz-azul.png"
+                                          class="img-fluid"
+                                          alt="..."
+                                        />
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p class="">Cruz Azul</p>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <p class="">2</p>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img
+                                          src="./assets/img/svg/chivas.png"
+                                          class="img-fluid"
+                                          alt="..."
+                                        />
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p class="">Chivas</p>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <p class="fw-bold">3</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card">
+                                  <div class="card-body text-center">
+                                    <p class="fw-bold">21:00</p>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img
+                                          src="./assets/img/svg/necaxa.png"
+                                          class="img-fluid"
+                                          alt="..."
+                                        />
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p class="">Necaxa</p>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <p class="">-</p>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img
+                                          src="./assets/img/svg/tigres.png"
+                                          class="img-fluid"
+                                          alt="..."
+                                        />
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p class="">Tigres</p>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <p class="">-</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <p class="fw-bold">COPA DE LA LIGA PROFESIONAL</p>
+                            <hr />
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="card">
+                                  <div class="card-body text-center">
+                                    <p class="text-muted">Finalizado</p>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img
+                                          src="./assets/img/svg/america.png"
+                                          class="img-fluid"
+                                          alt="..."
+                                        />
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p class="">América</p>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <p class="fw-bold">5</p>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img
+                                          src="./assets/img/svg/atlas.png"
+                                          class="img-fluid"
+                                          alt="..."
+                                        />
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p class="">Atlas</p>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <p class="">2</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card">
+                                  <div class="card-body text-center">
+                                    <p class="fw-bold">13:00</p>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img
+                                          src="./assets/img/svg/cruz-azul.png"
+                                          class="img-fluid"
+                                          alt="..."
+                                        />
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p class="">Cruz Azul</p>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <p class="">-</p>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img
+                                          src="./assets/img/svg/chivas.png"
+                                          class="img-fluid"
+                                          alt="..."
+                                        />
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p class="">Chivas</p>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <p class="fw-bold">-</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card">
+                                  <div class="card-body text-center">
+                                    <p class="fw-bold">15:00</p>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img
+                                          src="./assets/img/svg/necaxa.png"
+                                          class="img-fluid"
+                                          alt="..."
+                                        />
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p class="">Necaxa</p>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <p class="">-</p>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img
+                                          src="./assets/img/svg/tigres.png"
+                                          class="img-fluid"
+                                          alt="..."
+                                        />
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p class="">Tigres</p>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <p class="">-</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr />
+                        <div
+                          class="btn-group d-flex justify-content-center"
+                          role="group"
+                          aria-label="Controles de los partidos"
+                        >
+                          <button
+                            class="btn btn-outline-danger"
+                            title="Partidos anteriores"
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev"
+                          >
+                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            Anterior
+                          </button>
+                          <button class="btn btn-danger" type="button">
+                            Ver todo
+                          </button>
+                          <button
+                            class="btn btn-outline-danger"
+                            title="Siguientes partidos"
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next"
+                          >
+                            Siguiente
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+              <div class="row">
+                <h6 class="mb-3 text-danger fw-bold">PORTADA</h6>
+                <div class="col-md-8">
+                  <article class="card mb-3">
+                    <a href="#" class="text-decoration-none text-dark">
+                      <img
+                        src="./assets/img/articles/titular.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                          MEXICANOS POR EL MUNDO
+                        </h6>
+                        <h5 class="card-title fs-1 fw-bolder">
+                          Chucky Lozano, el "refuerzo absoluto" del PSV
+                          Eindhoven.
+                        </h5>
+                      </div>
+                      <div class="card-footer fw-medium">
+                        <small class="">JAMES SUNDERLAND</small>
+                      </div>
+                    </a>
+                  </article>
+                  <article class="card">
+                    <a href="#" class="text-decoration-none text-dark">
+                      <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center">
+                          <img
+                            src="./assets/img/articles/art2.webp"
+                            class="img-fluid card-img-container rounded-start"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                              LOS ÁNGELES DODGERS
+                            </h6>
+                            <h5 class="card-title fs-4 fw-bolder">
+                              De qué se le acusa a Julio Urías: Revelan los
+                              motivos de detención del mexicano de Dodgers
+                            </h5>
+                          </div>
+                          <div class="card-footer fw-medium">
+                            <small class="">WALTER WHITE</small>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card mb-3">
+                    <a href="#" class="text-decoration-none text-dark">
+                      <img
+                        src="./assets/img/articles/art1-aside.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                          MUNDIAL DE CLUBES
+                        </h6>
+                        <h5 class="card-title fs-6 fw-bolder">
+                          Larcamón sobre el City y Pep: "Especial tener al
+                          frente al mejor DT de la historia"
+                        </h5>
+                      </div>
+                      <div class="card-footer fw-medium">
+                        <small class="">HEATHER MASON</small>
+                      </div>
+                    </a>
+                  </article>
+                  <article class="card mb-3">
+                    <a href="#" class="text-decoration-none text-dark">
+                      <div class="row g-0">
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                              LIGA DE EXPANSIÓN MX
+                            </h6>
+                            <h5 class="card-title fs-6 fw-bolder">
+                              Teun WIIlke, el fichaje que Chivas le 'robó' al
+                              América
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center">
+                          <img
+                            src="./assets/img/articles/art2-aside.webp"
+                            class="img-fluid rounded-end card-img-container"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="card-footer fw-medium">
+                          HATTY HATTINGTON
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                  <article class="card mb-3 d-flex align-items-start">
+                    <a href="#" class="text-decoration-none text-dark">
+                      <div class="row g-0">
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                              F1
+                            </h6>
+                            <h5 class="card-title fs-6 fw-bolder">
+                              "Checo Pérez no es consistente", Helmut Marko y su
+                              nuevo dardo pensando en asiento de 2025 ¿Para
+                              Lando Norris?
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center">
+                          <img
+                            src="./assets/img/articles/art3-aside.webp"
+                            class="img-fluid rounded-end card-img-container"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="card-footer fw-medium">
+                          REDACCIÓN MARCA MX
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <h6 class="mb-3 text-danger fw-bold">FÚTBOL</h6>
+                <div class="col-md-8">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-md-4 col-sm-6">
+                      <article class="card">
+                        <img
+                          src="./assets/img/articles/art3.webp"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                            CLUB AMÉRICA
+                          </h6>
+                          <h5 class="card-title fs-5 fw-bolder">
+                            Israel Reyes, en riesgo de perderse el Clásico
+                            Nacional: América Informó de su lesión
+                          </h5>
+                        </div>
+                        <div class="card-footer fw-medium">
+                          <small class="">GORDON FREEMAN</small>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <article class="card">
+                        <img
+                          src="./assets/img/articles/art4.webp"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                            SELECCIÓN NACIONAL DE MÉXICO
+                          </h6>
+                          <h5 class="card-title fs-5 fw-bolder">
+                            Chucky Lozano lo acepta: No había conexión entre
+                            jugadores y Tata Martino durante Qatar 2022
+                          </h5>
+                        </div>
+                        <div class="card-footer fw-medium">
+                          <small class="">CRAZY DAVE</small>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                      <article class="card">
+                        <img
+                          src="./assets/img/articles/art5.webp"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                            FÚTBOL FEMENIL
+                          </h6>
+                          <h5 class="card-title fs-5 fw-bolder">
+                            Jenni Hermoso 'alarma' en Pachuca con el rumor de su
+                            ida a Tigres
+                          </h5>
+                        </div>
+                        <div class="card-footer fw-medium">ISAAC CLARKE</div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-center mt-3 mb-3">
+                  <a href="https://www.caliente.mx/casino" target="_blank">
+                    <img
+                      src="./assets/img/gifs/caliente-mx-wide.gif"
+                      alt="Publicidad Caliente MX"
+                      class="img-fluid"
+                      style="width: 50rem"
+                    />
+                  </a>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <h6 class="mb-3 text-danger fw-bold">LO MÁS TRENDING</h6>
+                <div class="col-md-8">
+                  <article class="card mb-3">
+                    <a href="#" class="text-decoration-none text-dark">
+                      <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center">
+                          <img
+                            src="./assets/img/articles/art6.webp"
+                            class="img-fluid card-img-container rounded-start"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                              CRUZ AZUL
+                            </h6>
+                            <h5 class="card-title fs-5 fw-bolder">
+                              Franco Escamilla destroza, con chiste, a Sebastían
+                              Jurado: "Cruz Azul, pongan una mochila"
+                            </h5>
+                          </div>
+                          <div class="card-footer fw-medium">
+                            <small class="">GLaDOS</small>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card mb-3 d-flex align-items-start">
+                    <a href="#" class="text-decoration-none text-dark">
+                      <div class="row g-0">
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                              F1
+                            </h6>
+                            <h5 class="card-title fs-6 fw-bolder">
+                              Sergio Pérez y su desafío en Red Bull:"Tuve que
+                              cambiar mi estilo de manejo"
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center">
+                          <img
+                            src="./assets/img/articles/art4-aside.webp"
+                            class="img-fluid rounded-end card-img-container"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="card-footer fw-medium">ARTHUR MORGAN</div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center p-3 mt-5">
+      <p class="fw-bold">
+        &copy; Septiembre 2023 Unidad Editorial Información Deportiva, S.L.U.
+        Todos los derechos reservados.
+      </p>
+      <p class="">
+        <a href="#" class="text-decoration-none text-dark"
+          >Política de privacidad</a
+        >
+        /
+        <a href="#" class="text-decoration-none text-dark"
+          >Política de cookies</a
+        >
+        /
+        <a href="#" class="text-decoration-none text-dark"
+          >Política de publicidad</a
+        >
+        / <a href="#" class="text-decoration-none text-dark">Contacto</a> /
+        <a href="#" class="text-decoration-none text-dark">Aviso legal</a> /
+        <a href="#" class="text-decoration-none text-dark">Publicidad</a>
+      </p>
+      <p class="fw-bold">Síguenos en:</p>
+      <span class="">
+        <a
+          href="https://www.facebook.com/MARCA/?locale=es_LA"
+          target="_blank"
+          class="text-decoration-none text-dark m-3"
+        >
+          <img
+            src="./assets/img/svg/Facebook_f_logo_(2019).svg.png"
+            class=""
+            alt="Facebook logo"
+            style="width: 3rem"
+          />
+        </a>
+        <a
+          href="https://twitter.com/marca?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          target="_blank"
+          class="text-decoration-none text-dark m-3"
+        >
+          <img
+            src="./assets/img/svg/rQYXqS5v-F1ySdm9WYAIbjHo-1024x1024.jpeg"
+            class=""
+            alt="Twitter logo"
+            style="width: 3rem; border-radius: 50%"
+          />
+        </a>
+        <a
+          href="https://www.marca.com/rss.html"
+          target="_blank"
+          class="text-decoration-none text-dark m-3"
+        >
+          <img
+            src="./assets/img/svg/rss-icon-logo-025B789EB6-seeklogo.com.png"
+            class=""
+            alt="RSS logo"
+            style="width: 3rem"
+          />
+        </a>
+      </span>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
